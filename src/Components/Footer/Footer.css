@@ -1,14 +1,17 @@
 .footer{
   background-image: url('../../assets/worldmap bg.jpg');
-  height: 300px;
+  height: auto;
   padding: 50px;
   background-repeat: no-repeat;
   width: 100%;
   object-fit: contain;
   background-size: 100% 100%;
-  background-color: aqua;
   display: flex;
+  flex-direction: column;
   
+}
+.footer-top{
+  display: flex;
 }
 
 .footer-container{
@@ -34,13 +37,108 @@ color: black;
 
 
 .footer-container .social-icons a{
-  text-decoration: none;
+  
   padding: 10px;
   font-size: 18px;
   color: gray;
   border-radius: 55%;
 }
-
 .footer-container .social-icons a:hover{
-  background-color: orangered;
+  
+  
+  color: rgb(145, 34, 34);
+  
 }
+a{
+  text-decoration: none;
+}
+
+
+
+
+.foot-sub-head{
+color: white;
+
+
+}
+
+.sub-child a{
+  color: black;
+ font-size: 14px;
+ font-weight: 500;
+ display: flex;
+ padding-top: 1rem;
+  
+}
+.footer-bottom{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bar{
+  width: 60%;
+  height: 40px;
+  opacity: .8;
+  display: flex;
+  justify-content: space-around;
+  background-color: beige;
+ 
+}
+
+.go-up{
+  padding: 10px;
+  background-color: transparent;
+  
+}
+.go-up:hover{
+  opacity: .2;
+  color: red;
+  background-color: beige;
+}
+
+.copy-right{
+ padding-top: 10px;
+}
+
+a:hover {
+  color: rgb(145, 34, 34);
+}
+
+@media (max-width: 767px) {
+  .footer{
+    margin: 0;
+    padding: 0 0;
+    width: 100%;
+    padding-left: 2px;
+    object-fit: contain;
+    
+  }
+  .footer-top{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .footer-container{
+    width: 87%;
+  }
+
+  .footer-bar{
+    width: 90%;
+  }
+
+  .footer-container .logo{
+   width: 250px;
+   padding-bottom: 8px;
+  }
+  
+  .footer-container{
+   display: flex;
+ 
+  }
+  a:hover {
+    color: rgb(145, 34, 34);
+  }
+}
+
